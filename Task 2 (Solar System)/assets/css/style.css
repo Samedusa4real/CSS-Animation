@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/wp9757166.jpg);
+    background-size: 100%;
+}
+
+@keyframes animation{
+    0%{
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.space > div {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.sun{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    z-index: 100;
+}
+
+.planet{
+    background: transparent;
+    border: 4px solid rgb(144, 142, 142);
+    animation: animation 5s linear infinite;
+}
+
+.mercury{
+    width: 110px;
+    height: 110px;
+}
+
+.venera{
+    width: 170px;
+    height: 170px;
+}
+
+.yer{
+    width: 230px;
+    height: 230px;
+}
+
+.mars{
+    width: 300px;
+    height: 300px;
+}
+
+.yupiter{
+    width: 370px;
+    height: 370px;
+}
+
+.saturn{
+    width: 440px;
+    height: 440px;
+}
+
+.uran{
+    width: 510px;
+    height: 510px;
+}
+
+.neptun{
+    width: 580px;
+    height: 580px;
+}
+
+.space > div::before,.space > div::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.mercury::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
+
+.venera::before{
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px;
+    background-color: #979797
+}
+
+.yer::before{
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: -15px;
+    background-color: #979797;
+}
+
+.mars::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
+
+.yupiter::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
+
+.saturn::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
+
+.uran::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
+
+.neptun::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background-color: #979797;
+}
